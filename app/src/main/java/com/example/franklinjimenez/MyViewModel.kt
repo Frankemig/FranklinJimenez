@@ -10,7 +10,7 @@ class MyViewModel : ViewModel() {
 
     private val repository = Repository()
 
-    private val books = map(repository.book){
+    private val books = Transformations.map(repository.book){
 entities->entities.map { mapperDBtoBookApi(it) }
     }
 

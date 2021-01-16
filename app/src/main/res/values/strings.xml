@@ -2,4 +2,10 @@
     <string name="app_name">FranklinJimenez</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="autor">Autor:</string>
+    <string name="t_tulo_del_libro">Título del Libro</string>
+    <string name="nombre_del_autor">Nombre del Autor:</string>
+    <string name="pa_s">País</string>
+    <string name="idioma">Idioma</string>
+    <string name="idioma_del_libro">Idioma del Libro</string>
 </resources>

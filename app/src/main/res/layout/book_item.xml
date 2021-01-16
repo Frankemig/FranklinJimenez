@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/t_tulo_del_libro"
+        android:textColor="@color/PrimaryText"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/PrimaryText"
+        android:text="@string/autor"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_nombreAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/nombre_del_autor"
+        android:textColor="@color/SecundaryText"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_title_autor"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_autor" />
+
+    <TextView
+        android:id="@+id/tv_title_pais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/PrimaryText"
+        android:text="@string/pa_s"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_autor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_autor" />
+
+    <TextView
+        android:id="@+id/tv_pais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="País del Autor"
+        android:textColor="@color/SecundaryText"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_title_pais"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_pais" />
+
+    <TextView
+        android:id="@+id/tv_title_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/PrimaryText"
+        android:text="@string/idioma"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_pais"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_pais" />
+
+    <TextView
+        android:id="@+id/tv_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/idioma_del_libro"
+        android:textColor="@color/SecundaryText"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_title_idioma"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_idioma" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
